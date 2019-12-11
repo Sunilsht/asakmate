@@ -1,5 +1,5 @@
 from django.urls import path
-from qna_app.views import 
-urls_pattern = [
-path('add/',views.addquestion ,"")
+from .views import addquestions
+urlpatterns = [
+    path('addquestions/', addquestions, name='addquestions')
 ]

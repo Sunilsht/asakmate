@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      newquestion
+    </title>
+  </head>
+  <body>
+    this is a question {%for que in que%}
+    <h1>{{que.title}}</h1>
+    <h2>{{que.question_desc}}</h2>
+    <h3>{{que.timestamp}}</h3>
+    <img src="../../media/{{que.question_img}}" />
+
+    {%endfor%}
+  </body>
+</html>
